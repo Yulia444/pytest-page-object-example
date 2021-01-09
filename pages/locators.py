@@ -9,7 +9,8 @@ class BasePageLocators():
 
 class BasketPageLocators():
     BASKET_LINK = (By.XPATH, '//a[@class="btn btn-default"]')
-    BASKET_IS_EMPTY = (By.XPATH, '//p[contains(text(),"Your basket is empty")]')
+    BASKET_IS_EMPTY = (By.XPATH, '//p[contains(text(),"Your basket is empty")]'
+                       )
     BASKET_LIST = (By.CSS_SELECTOR, 'form.basket_summary')
 
 
