@@ -71,7 +71,7 @@ def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
 
 
 def test_guest_cant_see_success_message(browser):
-    link = link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     page = MainPage(browser, link)
     page.open()
     product_page = ProductPage(browser, browser.current_url)
