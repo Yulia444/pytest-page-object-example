@@ -1,9 +1,11 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
+
 class ProductPage(BasePage):
     def add_to_cart(self):
-        add_to_cart = self.browser.find_element(*ProductPageLocators.ADD_TO_CART)
+        add_to_cart = self.browser.find_element(*ProductPageLocators.
+                                                ADD_TO_CART)
         add_to_cart.click()
     
     def should_be_add_to_cart_button(self):
@@ -15,12 +17,15 @@ class ProductPage(BasePage):
             "Success message is disappeared, but should not be"
     
     def should_not_be_success_message(self):
-        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+        assert self.is_not_element_present(*ProductPageLocators.
+                                           SUCCESS_MESSAGE), \
             "Success message is displayed, but should not be"
     
     def should_be_added_to_cart(self):
-        product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
-        product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
+        product_price = self.browser.find_element(*ProductPageLocators.
+                                                  PRODUCT_PRICE).text
+        product_name = self.browser.find_element(*ProductPageLocators.
+                                                 PRODUCT_NAME).text
 
         in_basket_product_price = self.browser.\
             find_element(*ProductPageLocators.ALERT_PRODUCT_PRICE).text
