@@ -1,8 +1,6 @@
 from .base_page import BasePage
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasketPageLocators
+
 
 class BasketPage(BasePage):
     def should_be_text_that_basket_is_empty(self):
