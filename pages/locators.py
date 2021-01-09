@@ -23,7 +23,7 @@ class LoginPageLocators():
     REGISTER_FORM = (By.CSS_SELECTOR, '.register_form')
     REGISTER_EMAIL = (By.CSS_SELECTOR, '#id_registration-email')
     REGISTER_PASSWORD = (By.CSS_SELECTOR, '#id_registration-password1')
-    REGISTER_CONFIRM_PASSWORD = (By.CSS_SELECTOR, '#id_registration-password2')
+    REGISTER_CONF_PASSWORD = (By.CSS_SELECTOR, '#id_registration-password2')
     REGISTER_BUTTON = (By.TAG_NAME, 'button[name="registration_submit"]')
 
 
