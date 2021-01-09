@@ -2,10 +2,9 @@ from .pages.main_page import MainPage
 from .pages.product_page import ProductPage
 from .pages.basket_page import BasketPage
 from .pages.login_page import LoginPage
-from .pages.base_page import BasePage
-from .pages.locators import ProductPageLocators
 import pytest
 import faker
+
 
 @pytest.mark.user_add_to_basket
 class TestUserAddBasketFromProductPage():
@@ -49,7 +48,7 @@ class TestUserAddBasketFromProductPage():
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer5",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer6",
                                   pytest.param("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer7",
-                                  marks=pytest.mark.xfail),
+                                               marks=pytest.mark.xfail),
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer8",
                                   "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"])
 @pytest.mark.need_review
